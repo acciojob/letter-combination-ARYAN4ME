@@ -17,7 +17,7 @@ function letterCombinations(input) {
 		}
 		let currChar = input[currIndex];
 		for(let i = 0; i<tabel[currChar].length; i++){
-			solve(currIndex++,calStr + tabel[currChar])
+			solve(currIndex + 1, calStr + tabel[currChar])
 		}
 	}
 	solve(0,"");
